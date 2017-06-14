@@ -7,9 +7,9 @@
     "build:prod": "babel src -d dist",
     "build:book": "gitbook build ./content/",
     "serve:book": "gitbook serve ./content/",
-    "serve:dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
-    "serve:prod": "cross-env NODE_ENV=production node dist/server.js",
-    "postinstall": "npm run build"
+    "serve:dev": "nodemon --exec babel-node src/server.js",
+    "serve:prod": "node dist/server.js",
+    "postinstall": "npm run build:prod"
   },
   "keywords": [
     "auth0",
