@@ -24,6 +24,14 @@ More info: http://sandrinodimattia.net/better-internal-documentation-with-gitboo
 
 ## Usage
 
+##### direnv
+
+[Direnv](http://direnv.net/) is an environment switcher for the shell. It will keep track of the environment variables you'll need for the project. You can find an example `.envrc` in the root of the project, you may need to alter it to fit your environment. For more information, [read the documentation](http://direnv.net/).
+
+```
+cp .envrc.example .envrc
+```
+
  - `npm run serve:book`: Host the book without authentication (useful for when you're writing content)
  - `npm run serve:dev`: Host the book with authentication
  - `npm run serve:prod`: Host the book with authentication (production)
