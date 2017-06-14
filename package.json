@@ -17,18 +17,16 @@
     "express"
   ],
   "engines": {
-    "node": "5.3.0"
+    "node": "8.0.0"
   },
-  "author": "Sandrino Di Mattia",
+  "author": "Origin: Sandrino Di Mattia | Fork: Max McKenzie",
   "license": "MIT",
   "dependencies": {
     "compression": "^1.6.1",
     "cookie-parser": "^1.4.1",
-    "cross-env": "^1.0.7",
     "express": "^4.13.3",
     "express-session": "^1.13.0",
     "gitbook-cli": "^1.0.1",
-    "nconf": "^0.8.2",
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-auth0": "^0.5.1"
