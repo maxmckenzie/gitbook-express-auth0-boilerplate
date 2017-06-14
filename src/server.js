@@ -10,7 +10,7 @@ const Auth0Strategy = require('passport-auth0');
 // Initialize configuration.
 nconf.argv()
   .env()
-  .file({ file: './config.json' });
+  .file({ file: '../config.json' });
 
 // Initialize authentication.
 passport.serializeUser((user, done) => done(null, user));
@@ -60,7 +60,7 @@ app.use(function(req, res, next) {
 });
 
 // Host the book.
-app.use(Express.static(path.join(__dirname, './content/_book')));
+app.use(Express.static(path.join(__dirname, '../content/_book')));
 
 // Start the server.
 const port = process.env.PORT || 4001;
