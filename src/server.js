@@ -47,10 +47,7 @@ app.get('/logout',
 
 // Force authentication for the next routes.
 app.use(function(req, res, next) {
-  if (!req.isAuthenticated()) {
-    return res.redirect('/login');
-  }
-  next();
+  (!req.isAuthenticated()) ? return res.redirect('/login') : next();
 });
 
 // Host the book.
@@ -58,10 +55,6 @@ app.use(Express.static(path.join(__dirname, '../content/_book')));
 
 // Start the server.
 const port = process.env.PORT || 4001;
-app.listen(port, function(error) {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Listening on http://localhost:' + port);
-  }
+app.listen(port, (error) => {
+  (error) ? console.log(error) : console.log('Listening on http://localhost:' + port);
 });
